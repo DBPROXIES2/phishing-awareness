@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Awareness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Phishing Awareness</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-to-identify">How to Identify</a></li>
+        <li><a href="#protect-yourself">Protect Yourself</a></li>
+        <li><a href="#report">Report Phishing</a></li>
+        <li><a href="#phishing-example">Phishing Example</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>What is Phishing?</h2>
+    <p>Phishing is a type of online scam where attackers impersonate legitimate organizations to steal sensitive information...</p>
+  </section>
+
+  <section id="how-to-identify">
+    <h2>How to Identify Phishing Websites</h2>
+    <ul>
+      <li>Check the URL: Is it spelled correctly?</li>
+      <li>Look for HTTPS: Is there a lock icon in the URL bar?</li>
+      <li>Beware of pop-ups requesting sensitive information...</li>
+    </ul>
+  </section>
+
+  <section id="protect-yourself">
+    <h2>How to Protect Yourself</h2>
+    <p>Enable two-factor authentication, avoid clicking on suspicious links, and use reliable security software...</p>
+  </section>
+
+  <section id="report">
+    <h2>Report a Phishing Website</h2>
+    <p>If you encounter a phishing website, you can report it to authorities or use the following tools...</p>
+  </section>
+
+  <section id="phishing-example">
+    <h2>Example of a Phishing Site</h2>
+    <p>Click the button below to see how a phishing site might look. Remember, this is just a demonstration for educational purposes!</p>
+    <button onclick="openPhishingExample()">View Phishing Example</button>
+  </section>
+
+  <!-- Phishing Modal -->
+  <div id="phishing-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePhishingExample()">&times;</span>
+      <h3>Phishing Login Example</h3>
+      <p>This is an example of a phishing website. It's designed to look like a legitimate login page but is used to steal your credentials.</p>
+      <form action="javascript:void(0);">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+      </form>
+      <p><strong>Note: This form does nothing. It is only for demonstration.</strong></p>
+    </div>
+  </div>
+
+  <section id="phishing-stats">
+    <h2>Phishing Stats</h2>
+    <p>Did you know? The number of phishing websites detected is growing every year. Here's some key data:</p>
+    <div id="stats-data">
+      <p>Over 1.4 million phishing sites are created every month.</p>
+      <p>In Q3 2024, 932k unique phishing sites were detected.</p>
+      <p>More than 3.4 billion phishing emails are sent every day worldwide.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Phishing Awareness Project | Educate & Protect</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
